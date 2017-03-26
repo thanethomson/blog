@@ -1,0 +1,15 @@
+/bin/
+/lib/
+/include/
+.Python
+*.pyc
+*.bak
+*.swp
+pip-selfcheck.json
+/public/
+/deploy/
+deploy-blog
+/backups
+config.yml
+.sass-cache/
+

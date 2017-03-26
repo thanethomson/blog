@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}More Posts, Page {{ page.number }} - Thane Thomson{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="twelve columns">
+            <h3>More Posts</h3>
+            <div class="page-count">
+                Page {{ page.number }} of {{ page.last_page }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for post in page %}
+            <div class="six columns">
+                {% include "partials/post-summary-small.html" %}
+            </div>
+            {% if loop.index % 2 == 0 %}
+                </div>
+                {% if not loop.last %}
+                    <div class="row">
+                {% endif %}
+            {% else %}
+                {% if loop.last %}
+                    <div class="six columns">&nbsp;</div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+    <div class="row spacer">&nbsp;</div>
+    <div class="row spacer">&nbsp;</div>
+
+    {% with paginator = page.paginator %}
+        {% include "partials/pager.html" %}
+    {% endwith %}
+
+{% endblock %}

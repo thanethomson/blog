@@ -1,0 +1,27 @@
+{% with tag_count = tag_counts|length %}
+  {% with tag_groups = (tag_count / 4)|round(0, 'floor')|int %}
+    {% for i in range(tag_groups) %}
+      <div class="row">
+        {% for tag in tag_counts[i*4:(i+1)*4] %}
+          <div class="three columns">
+            {{ tag.pk }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    {% with remaining_tags = (tag_count - (tag_groups * 4)) %}
+      {% if remaining_tags > 0 %}
+        <div class="row">
+          {% for tag in tag_counts[(tag_groups*4):] %}
+            <div class="three columns">
+              {{ tag.pk }}
+            </div>
+          {% endfor %}
+          {% for i in range(4 - remaining_tags) %}
+            <div class="three columns">&nbsp;</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+  {% endwith %}
+{% endwith %}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{% if post and post.summary %}{{ post.summary|trim }}{% else %}{{ site_description|trim }}{% endif %}" />
+  <meta name="author" content="Thane Thomson" />
+  <meta name="generator" content="Statik" />
+  <title>{% block title %}{{ page_title }}{% endblock %}</title>
+
+  <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+  <!--[if IE]><link rel="shortcut icon" href="/images/favicon.ico"><![endif]-->
+  <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+  <link rel="apple-touch-icon-precomposed" href="{% asset "blog/images/apple-touch-icon-precomposed.png" %}" />
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+  <link rel="icon" href="{% asset "blog/images/favicon.png" %}" />
+
+  <link rel="stylesheet" type="text/css" href="{% asset "skeleton/css/normalize.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% asset "skeleton/css/skeleton.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% asset "font-awesome/css/font-awesome.min.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% asset "highlight/styles/androidstudio.css" %}" />
+  <link rel="stylesheet" type="text/css" href="{% asset "blog/css/blog.css?5" %}" />
+</head>
+<body>
+  <div class="container">
+    <nav class="primary">
+      <div class="brand">
+        <a href="{% url "home" %}">Thane Thomson</a>
+      </div>
+      <div class="menu-collapse">
+        <a href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="{% url "home" %}">Home</a></li>
+          <li><a href="{% url "about" %}">About</a></li>
+          <li class="social-icons">
+            <a href="https://za.linkedin.com/in/thanethomson"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://twitter.com/thanethomson"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://github.com/thanethomson"><i class="fa fa-github-square"></i></a>
+            <a href="https://thanethomson.com/index.xml"><i class="fa fa-rss-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="body">
+      {% block body %}{% endblock %}
+    </div>
+
+    <footer>
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License"
+                 title="This work is licensed under a Creative Commons Attribution 4.0 International License"
+                 style="border-width:0"
+                 src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+            />
+        </a>
+        <a href="https://getstatik.com"
+            title="Site generated using Statik">
+            <img src="{% asset "blog/images/statik-logo-small.png" %}" />
+        </a>
+    </footer>
+
+    <div class="body">
+        {% block comments %}{% endblock %}
+    </div>
+  </div>
+  <script src="{% asset "jquery/dist/jquery.min.js" %}"></script>
+  <script src="{% asset "highlight/highlight.pack.js" %}"></script>
+  <script src="{% asset "blog/js/blog.js" %}"></script>
+  {% include "partials/analytics.html" %}
+</body>
+</html>

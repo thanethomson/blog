@@ -1,0 +1,20 @@
+path: /
+template: home
+context:
+  static:
+    is-homepage: True
+  dynamic:
+    latest-posts: session.query(Post).order_by(Post.date.desc()).limit(5)
+    older-posts: paginate(session.query(Post).order_by(Post.date.desc()).offset(5), 10, start_page=2)
+    tag-counts: |
+      session.query(
+        Tag.pk,
+        func.count(distinct(Post.pk)).label('count')
+      ).outerjoin(
+        Tag.posts
+      ).group_by(
+        Tag.pk
+      ).order_by(
+        func.count(distinct(Post.pk)).desc()
+      ).all()
+    post-tags: session.query(PostTag).all()

@@ -1,0 +1,5 @@
+path:
+  template: /{{ post.date|date("%Y/%m/%d") }}/{{ post.slug }}
+  for-each:
+    post: session.query(Post).all()
+template: post

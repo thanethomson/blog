@@ -1,0 +1,95 @@
+/*
+ * Raleway
+ */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold-Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*
+ * Lato
+ */
+/*@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}*/
+
+/*
+ * Pridi
+ */
+/*
+@font-face {
+  font-family: "Pridi";
+  src: url("../fonts/Pridi-Medium.ttf");
+}
+@font-face {
+  font-family: "Pridi";
+  src: url("../fonts/Pridi-Bold.ttf");
+  font-weight: bold;
+}*/
+
+/*
+ * SecularOne
+ */
+/*@font-face {
+  font-family: "SecularOne";
+  src: url("../fonts/SecularOne-Regular.ttf");
+}*/
+
+/*
+ * RobotoMono
+ */
+/*@font-face {
+ font-family: "RobotoMono";
+ src: url("../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+ font-family: "RobotoMono";
+ src: url("../fonts/RobotoMono-Bold.ttf");
+ font-weight: bold;
+}*/
+
+/*
+ * RobotoSlab
+ */
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab-Bold.ttf");
+  font-weight: bold;
+}

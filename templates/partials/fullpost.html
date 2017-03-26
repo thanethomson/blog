@@ -1,0 +1,11 @@
+<h1>{{ post.title }}</h1>
+<div class="meta">
+  By <b>Thane</b> on {{ post.date|date("%a %d %B %Y") }}
+</div>
+<div class="tags">
+  <i class="fa fa-tags"></i>
+  {% include "partials/post-tags.html" %}
+</div>
+<div class="full-post">
+  {{ post.content|safe }}
+</div>

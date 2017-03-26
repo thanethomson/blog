@@ -1,0 +1,10 @@
+project-name: thanethomson.com
+base-path: /
+encoding: utf-8
+context:
+  static:
+    site-description: >
+      I enjoy creating useful things for people, and sometimes I like to
+      write about stuff too.
+    production: false
+    disqus-user-id: useridhere

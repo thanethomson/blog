@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thane Thomson</title>
+    <description>{{ site_description }}</description>
+    <link>https://thanethomson.com</link>
+    <atom:link href="https://thanethomson.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>{{ now_rfc822 }}</lastBuildDate>
+    <pubDate>{{ now_rfc822 }}</pubDate>
+    <ttl>1440</ttl>
+
+    {% for post in posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <description>
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.content|safe|striptags|truncate(600)|escape }}
+          {% endif %}
+        </description>
+        <link>https://thanethomson.com{% url "posts", post %}</link>
+        <guid isPermaLink="true">https://thanethomson.com{% url "posts", post %}</guid>
+        <pubDate>{{ post.date|date("%a, %d %b %Y %H:%M:%S +0200") }}</pubDate>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

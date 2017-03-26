@@ -1,0 +1,13 @@
+path:
+  template: /tags/{{ tag.pk }}
+  for-each:
+    tag: session.query(Tag).all()
+template: posts-for-tag
+context:
+  for-each:
+    posts: |
+      session.query(Post).filter(
+        Post.tags.any(pk=tag.pk)
+      ).order_by(
+        Post.date.desc()
+      ).all()

@@ -1,0 +1,383 @@
+/*
+ * Styling for https://thanethomson.com/
+ */
+
+@import "fonts.css";
+@import "mixins";
+
+/*$color-bg: #284c60;
+$color-text: #ccc;
+
+$color-code-bg: #555;
+//$color-blockquote-bg: #2d3439;
+$color-blockquote-bg: #282b2e;
+
+$color-menu-bg: #323131;
+$color-menu-border: #ccc;
+$color-menu-link: $color-text;
+$color-menu-link-hover: #56a6d2;
+
+$color-link: #56a6d2;
+$color-link-hover: #3e86ad;
+
+$color-post-small-title-link: $color-text;*/
+
+$color-bg: #fff;
+$color-text: #333;
+
+$color-code-bg: #ddd;
+$color-blockquote-bg: #ddd;
+
+$color-link: #4093bb;
+$color-link-hover: #4093bb;
+
+$color-menu-bg: #eee;
+$color-menu-link: $color-text;
+$color-menu-link-mobile: $color-text;
+$color-menu-link-hover: $color-link-hover;
+$color-menu-border: $color-menu-link;
+
+$color-title-link: $color-text;
+$color-title-link-hover: $color-link-hover;
+
+$color-post-small-title-link: $color-text;
+
+$width-menu-mobile: 300px;
+
+body {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  background-color: $color-bg;
+  color: $color-text;
+  font-size: 1.8em;
+}
+
+code {
+  border: none;
+  //background-color: $color-code-bg;
+  background: none;
+  //padding: 5px;
+  padding: 0px;
+}
+
+nav.primary {
+  font-family: "RobotoSlab", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  width: 100%;
+  height: 30px;
+  min-height: 30px;
+
+  a, a:hover, a:active, a:visited, a:focus {
+    color: $color-menu-link;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $color-menu-link-hover;
+  }
+
+  .brand {
+    color: $color-text;
+    display: none;
+  }
+  .menu-collapse {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .menu {
+    position: fixed;
+    top: -300px;
+    right: 0;
+    left: 0;
+    background-color: $color-menu-bg;
+    border-bottom: 1px solid $color-menu-border;
+    overflow: hidden;
+    padding: 15px;
+    z-index: 99;
+    opacity: 0.95;
+    @include transition(top 0.5s ease-in-out);
+
+    ul {
+      list-style-type: none;
+      padding: 5px 10px 10px 5px;
+      margin: 0;
+
+      li {
+        font-size: 1.3em;
+      }
+      li.social-icons {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0 50px 0;
+  text-align: center;
+  font-size: 0.8em;
+
+  a {
+    border: 0;
+    text-decoration: none;
+    img {
+      border: 0;
+      opacity: 0.5;
+    }
+  }
+  a:hover {
+    img {
+      opacity: 1.0;
+    }
+  }
+
+  /*a {
+    color: $color-link;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
+  }
+  a:hover {
+    color: $color-link-hover;
+    border-bottom: 1px dotted $color-link;
+  }*/
+}
+
+nav.primary.open {
+  .menu {
+    top: 0;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.img1 img {
+  width: auto;
+  height: 350px;
+  max-height: 350px;
+  margin-bottom: 10px;
+  @include border-radius(10px);
+}
+
+.img2 {
+  width: auto;
+  height: 350px;
+  min-height: 350px;
+
+  img {
+    width: auto;
+    margin-bottom: 10px;
+    max-height: 350px;
+  }
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+}
+
+div.body {
+  padding-top: 30px;
+
+  a {
+    color: $color-link;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
+  }
+  a:hover {
+    color: $color-link-hover;
+    border-bottom: 1px dotted $color-link;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "RobotoSlab", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    //letter-spacing: -0.05em;
+    padding-top: 60px;
+
+    a, a:hover, a:visited, a:active {
+      color: $color-title-link;
+      text-decoration: none;
+      border: 0;
+    }
+    a:hover {
+      color: $color-menu-link-hover;
+    }
+  }
+  h4, h5, h6 {
+    font-weight: bold;
+    a, a:hover, a:visited, a:active {
+      font-weight: bold;
+    }
+  }
+
+  .full-post {
+    padding-top: 30px;
+  }
+  .partial-post {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .paging {
+    text-align: center;
+
+    .page-link {
+      display: inline-block;
+      padding: 0 15px 0 15px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ol, ul {
+    margin-left: 40px;
+  }
+  li {
+    list-style-position: outside;
+  }
+
+  a.read-more, a.read-more:hover, a.read-more:visited, a.read-more:active {
+    color: $color-title-link;
+    text-decoration: none;
+    border: 0;
+  }
+  a.read-more:hover {
+    color: $color-title-link-hover;
+  }
+
+  div.row.spacer {
+    margin-bottom: 20px;
+  }
+
+  .about-avatar {
+    text-align: center;
+    img {
+      margin-top: 50px;
+      width: 192px;
+      height: auto;
+    }
+  }
+
+  div.comments {
+    //margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .page-count {
+    font-weight: bold;
+  }
+}
+
+blockquote {
+  margin: 0 0 30px 0;
+  padding: 25px;
+  background-color: $color-blockquote-bg;
+  @include border-radius(10px);
+  font-style: italic;
+
+  p {
+    margin: 0;
+  }
+}
+
+.img-caption {
+  font-size: 80%;
+  margin-bottom: 40px;
+}
+
+/*
+ * Styles for Desktop
+ */
+@media(min-width: 960px) {
+  .container {
+    width: 860px;
+  }
+  body {
+    font-size: 2.0em;
+  }
+  nav.primary {
+    position: static;
+    margin: 20px 0 0 0;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid $color-menu-border;
+    font-size: 1.5em;
+
+    .brand {
+      display: inline-block;
+    }
+    .menu-collapse {
+      display: none;
+    }
+    .menu {
+      position: static;
+      float: right;
+      background: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      top: 0; left: 0;
+      font-size: 0.8em;
+
+      ul {
+        padding: 0;
+        li {
+          display: inline-block;
+          font-size: 1.1em;
+          margin-left: 5px;
+        }
+        li.social-icons {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+
+  div.body {
+    padding-top: 0;
+
+    ul {
+      li {
+        list-style: disc;
+      }
+    }
+
+    .about-avatar {
+      img {
+        margin: 0;
+        width: 256px;
+        height: auto;
+        @include grayscale;
+      }
+      img:hover {
+        @include nograyscale;
+      }
+    }
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.footnote {
+  font-size: 80%;
+}

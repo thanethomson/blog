@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Posts for tag {{ tag.pk }} - Thane Thomson{% endblock %}
+
+{% block body %}
+  {% with post_count = posts|length %}
+    <div class="row">
+      <div class="twelve columns">
+        <h1>{{ tag.pk }}</h1>
+        <p>
+          {% if post_count == 1 %}
+            The following post is tagged with the tag <b>{{ tag.pk }}</b>.
+          {% else %}
+            The following {{ post_count }} posts are tagged with the
+            tag <b>{{ tag.pk }}</b>.
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    {% with post_groups = (post_count / 2)|round(0, 'floor')|int %}
+      {% for cur_group in range(post_groups) %}
+        <div class="row">
+          {% for cur_post in range(2) %}
+            <div class="six columns">
+              {% with post = posts[(cur_group*2)+cur_post] %}
+                {% include "partials/post-summary-small.html" %}
+              {% endwith %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+
+      {% with remaining_posts = (post_count - (2 * post_groups)) %}
+        <div class="row">
+          {% for cur_post in range(remaining_posts) %}
+            <div class="six columns">
+              {% with post = posts[(post_groups*2)+cur_post] %}
+                {% include "partials/post-summary-small.html" %}
+              {% endwith %}
+            </div>
+          {% endfor %}
+          {% for i in range(2 - remaining_posts) %}
+            <div class="six columns">&nbsp;</div>
+          {% endfor %}
+        </div>
+      {% endwith %}
+    {% endwith %}
+  {% endwith %}
+{% endblock %}

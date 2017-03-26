@@ -1,0 +1,3 @@
+{% for tag in post.tags %}
+  <a href="{% url "posts-for-tag", tag %}">{{ tag.pk }}</a>&nbsp;
+{% endfor %}

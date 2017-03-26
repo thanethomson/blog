@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Thane Thomson's Blog{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="twelve columns">
+            {% with post = latest_posts[0] %}
+                {% include "partials/post-summary.html" %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <div class="row spacer">&nbsp;</div>
+
+    <div class="row">
+        {% for post in latest_posts[1:3] %}
+            <div class="six columns post-summary-small">
+                {% include "partials/post-summary-small.html" %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        {% for post in latest_posts[3:5] %}
+            <div class="six columns post-summary-small">
+                {% include "partials/post-summary-small.html" %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="row spacer">&nbsp;</div>
+
+    {% with paginator = older_posts %}
+        {% include "partials/pager.html" %}
+    {% endwith %}
+
+{% endblock %}

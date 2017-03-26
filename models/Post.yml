@@ -1,0 +1,6 @@
+title: String
+slug: String
+summary: Text
+date: DateTime
+tags: Tag[] -> posts
+content: Content

@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="twelve columns paging">
+        <span class="page-link">
+            {% if is_homepage %}
+                &lt;
+            {% else %}
+                {% if page.has_previous %}
+                    <a href="{% url "paged-posts", page.number - 1 %}">&lt;</a>
+                {% else %}
+                    <a href="{% url "home" %}">&lt;</a>
+                {% endif %}
+            {% endif %}
+        </span>
+
+        {% if is_homepage %}
+            <span class="page-link">1</span>
+        {% else %}
+            <span class="page-link">
+                <a href="{% url "home" %}">1</a>
+            </span>
+        {% endif %}
+
+        {% for _page in paginator %}
+            <span class="page-link">
+                {% if is_homepage %}
+                    <a href="{% url "paged-posts", _page.number %}">{{ _page.number }}</a>
+                {% else %}
+                    {% if page.number == _page.number %}
+                        {{ _page.number }}
+                    {% else %}
+                        <a href="{% url "paged-posts", _page.number %}">{{ _page.number }}</a>
+                    {% endif %}
+                {% endif %}
+            </span>
+        {% endfor %}
+
+        <span class="page-link">
+            {% if is_homepage %}
+                <a href="{% url "paged-posts", 2 %}">&gt;</a>
+            {% else %}
+                {% if page.has_next %}
+                    <a href="{% url "paged-posts", page.number+1 %}">&gt;</a>
+                {% else %}
+                    &gt;
+                {% endif %}
+            {% endif %}
+        </span>
+    </div>
+</div>
