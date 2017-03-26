@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "base.html.jinja2" %}
 
 {% block title %}{{ post.title }} - Thane Thomson{% endblock %}
 
 {% block body %}
-    {% include "partials/fullpost.html" %}
+    {% include "partials/fullpost.html.jinja2" %}
 {% endblock %}
 
 {% block comments %}
-    {% include "partials/disqus.html" %}
+    {% include "partials/disqus.html.jinja2" %}
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html.jinja2" %}
 
 {% block title %}Posts for tag {{ tag.pk }} - Thane Thomson{% endblock %}
 
@@ -24,7 +24,7 @@
           {% for cur_post in range(2) %}
             <div class="six columns">
               {% with post = posts[(cur_group*2)+cur_post] %}
-                {% include "partials/post-summary-small.html" %}
+                {% include "partials/post-summary-small.html.jinja2" %}
               {% endwith %}
             </div>
           {% endfor %}
@@ -36,7 +36,7 @@
           {% for cur_post in range(remaining_posts) %}
             <div class="six columns">
               {% with post = posts[(post_groups*2)+cur_post] %}
-                {% include "partials/post-summary-small.html" %}
+                {% include "partials/post-summary-small.html.jinja2" %}
               {% endwith %}
             </div>
           {% endfor %}

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html.jinja2" %}
 
 {% block title %}More Posts, Page {{ page.number }} - Thane Thomson{% endblock %}
 
@@ -15,7 +15,7 @@
     <div class="row">
         {% for post in page %}
             <div class="six columns">
-                {% include "partials/post-summary-small.html" %}
+                {% include "partials/post-summary-small.html.jinja2" %}
             </div>
             {% if loop.index % 2 == 0 %}
                 </div>
@@ -33,7 +33,7 @@
     <div class="row spacer">&nbsp;</div>
 
     {% with paginator = page.paginator %}
-        {% include "partials/pager.html" %}
+        {% include "partials/pager.html.jinja2" %}
     {% endwith %}
 
 {% endblock %}

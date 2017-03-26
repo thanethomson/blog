@@ -2,7 +2,7 @@
 <div class="meta">
   <b>{{ post.date|date("%d %b %Y") }}</b>
   &nbsp;
-  <i class="fa fa-tags"></i> {% include "partials/post-tags.html" %}
+  <i class="fa fa-tags"></i> {% include "partials/post-tags.html.jinja2" %}
 </div>
 <div class="partial-post">
   {% if post.summary %}
