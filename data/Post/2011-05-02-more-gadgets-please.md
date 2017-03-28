@@ -10,15 +10,15 @@ tags:
   - sustainability
 ---
 
-After many years’ struggle through multiple failed businesses, Evan finally
-caught wind of an idea that could make him some decent money. His wife’s eyes
-were weary from the late bill payments, repeated pleading with debt collectors,
+After many years' struggle through multiple failed businesses, Evan finally
+caught wind of an idea that could make him some decent money. His wife's eyes
+were weary from the late bill payments, repeated pleading with debt collectors,
 and her deep longing to start a family of her own that she had put off for five
 long years now due to numerous fights over financial security.
 
 She was naturally sceptical of this idea, but Evan was a gifted salesman, and
 managed to charm her into giving him one last shot. "If this one doesn't work
-Ev, you’re going back to being an accountant for at least the next ten to
+Ev, you're going back to being an accountant for at least the next ten to
 fifteen years - until the kids are old enough to not need so much security."
 
 Although he understood the practical implications of having children, and that
@@ -36,7 +36,7 @@ going and get the finance, as well as the swiftness that only a relatively
 small operation could have to tackle the profit-bloated, complacent
 multinationals.
 
-He wasn’t convinced of the longevity of the idea though, as it involved making
+He wasn't convinced of the longevity of the idea though, as it involved making
 a particular type of gadget which would add non-critical functionality to
 high-end mobile phones - a niche market; a nice-to-have. But, by his
 calculations, he could probably make enough money for him and his family to
@@ -74,7 +74,7 @@ Who sets these targets? Why these targets? Why think of one's team in terms of
 "bottlenecks" and "processes", as though they were a non-autonomous, unfeeling
 system of some kind?
 
-Many to whom I’ve expressed this opinion say to me: "That's nice in an ideal
+Many to whom I've expressed this opinion say to me: "That's nice in an ideal
 world, but how the heck do you intend on getting anything done?"
 
 Who says we have to get anything done? And what is it that we should be getting
@@ -83,7 +83,7 @@ ways to accommodate the world's growing population, in terms of first meeting
 their basic needs?
 
 The problem is, there seems to be no money in the business of meeting people's
-basic needs, because people with such basic needs generally don’t have the money
+basic needs, because people with such basic needs generally don't have the money
 to pay for those needs to be met. There are examples, however, of low-cost
 "base of the pyramid" solutions that help fulfil such basic needs, but these
 seem to require tremendous capital outlays and extremely rigid standardisation

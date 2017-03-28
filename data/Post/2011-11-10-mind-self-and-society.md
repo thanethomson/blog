@@ -218,7 +218,7 @@ control is thus a form of _self-criticism_.
 "Society" then is defined by Mead (from da Silva, p 61) as
 
 > the organised set of responses individuals can use for the purposes of
-social control - which … operates in terms of self-criticism.
+social control - which ... operates in terms of self-criticism.
 
 Krishnamurti, who apparently influenced and was influenced by David Bohm,
 wrote about society in

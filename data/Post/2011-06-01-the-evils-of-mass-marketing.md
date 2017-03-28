@@ -14,7 +14,7 @@ Reading a post about the
 a thought on mass marketing was sparked by the second paragraph of
 the article:
 
-> Of course, in the last decade of Usenet’s life, it became increasingly
+> Of course, in the last decade of Usenet's life, it became increasingly
 emaciated and diseased, robbing many of us of those fond memories. Legitimate
 users flocked to newer mediums and all that was left was the infectious spam.
 

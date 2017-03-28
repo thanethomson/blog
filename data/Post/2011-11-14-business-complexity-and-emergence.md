@@ -77,7 +77,7 @@ a traffic jam where there's no apparent reason for it.
   2. Person 2, who is following person 1 quite closely, brakes a bit to compensate for person 1's slowing down. 
   3. Person 3 sees person 2 braking from a bit of a distance away and so brakes as well to compensate, but brakes a little longer than person 2 does because person 3 is cautious and wants to make sure that he has braked enough to be safe. 
   4. Persons 4 and 5 see person 3 braking, and so brake just a little more and ever so slightly little longer than person 3. 
-  5. And so on…
+  5. And so on...
 
 Eventually, given enough people on the highway, the _emergent phenomenon_ is
 that we all sit still in a _traffic jam_. What caused the traffic jam? Not an

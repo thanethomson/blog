@@ -52,7 +52,7 @@ electrons. Those are then made up of quarks._
 
 >
 
-> _A. Well, we have some theories about what quarks are made of…_
+> _A. Well, we have some theories about what quarks are made of..._
 
 >
 
@@ -60,7 +60,7 @@ electrons. Those are then made up of quarks._
 
 >
 
-> _A. Like I said, we have some theories…_
+> _A. Like I said, we have some theories..._
 
 So what is it that's preventing us from saying what something **is**?
 

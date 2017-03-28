@@ -13,7 +13,7 @@ tags:
 ---
 Of all the articles on my site, [The Flaw in Network 21's Value
 Proposition](https://thanethomson.com/2012/03/28/the-flaw-in-network-21s-value-
-proposition/ "The flaw in Network 21′s value proposition" ) gets the most
+proposition/ "The flaw in Network 21's value proposition" ) gets the most
 traffic and comments, and seems to stir up the most emotional responses. After
 reading through my previous post and all the comments, I thought I'd unpack a
 little more of why I see its value proposition to be flawed and actually
@@ -22,9 +22,7 @@ general, and not just to Network 21, but Network 21 is a very good, practical
 example for many people.
 
 
-
 ##  Money and Freedom
-
 To begin with, let's think about the role of money in society. **Money allows
 us freedom from people we don't know**. Generally, in close relationships such
 as family relationships and deep-spirited friendships, we interact and
@@ -55,9 +53,7 @@ during periods of hyperinflation](http://moneytipcentral.com/inflation-in-
 america-what-will-hyperinflation-look-like)).
 
 
-
 ##  Network 21
-
 So how does this relate to Network 21's value proposition? I don't doubt for a
 second that Network 21 could potentially be giving people "discounts" on
 products and services by allowing them to purchase things online. Apart from

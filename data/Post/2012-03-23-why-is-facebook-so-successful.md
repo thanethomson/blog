@@ -18,7 +18,7 @@ bit of an alternative perspective on it.
 
 
 
-###  The One Thing We Learn From History…
+###  The One Thing We Learn From History...
 
 As Malcolm Gladwell pointed out in [Outliers](http://amzn.com/0316017930),
 someone's success is not independent of their history. For example, Bill Gates

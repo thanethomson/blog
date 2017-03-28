@@ -76,11 +76,11 @@ could be made of._
 
 >
 
-> **Wait a minute… So what the hell am I eating?**
+> **Wait a minute... So what the hell am I eating?**
 
 >
 
-> _Good question. Nobody really knows. Like I said, we've got some theories…  
+> _Good question. Nobody really knows. Like I said, we've got some theories...
 >  _
 
 

@@ -26,10 +26,10 @@ the underlying paradigm from which we're viewing the challenge of our co-
 existence is limiting. As Thomas Kuhn pointed out in [The Structure of
 Scientific Revolutions](http://amzn.com/0226458083):
 
-> A paradigm is a criterion for choosing problems that … can be assumed to
+> A paradigm is a criterion for choosing problems that ... can be assumed to
 have solutions. To a great extent, these are the only problems that the
-community will … encourage its members to undertake. Other problems … are
-rejected as metaphysical … or sometimes as just too problematic to be worth
+community will ... encourage its members to undertake. Other problems ... are
+rejected as metaphysical ... or sometimes as just too problematic to be worth
 the time. A paradigm can, for that matter, even insulate the community from
 those socially important problems that are not reducible to the [familiar]
 puzzle form because they cannot be stated in terms of the conceptual and
@@ -60,8 +60,8 @@ source of everything, absolutely everything in the universe, according to
 Pirsig, is Quality. Quality is not an objective or a subjective phenomenon -
 it is the source of subjects and objects, and exists at their interface.
 Pirsig then divides Quality into static patterns of quality and Dynamic
-Quality, where Dynamic Quality is the leading edge of experience: the here-
-and-now. Dynamic Quality is all that there is, actually, but it can never be
+Quality, where Dynamic Quality is the leading edge of experience: the here-and-now.
+Dynamic Quality is all that there is, actually, but it can never be
 grasped intellectually because, by the time we think about the here-and-now,
 the here-and-now has already moved on. Pirsig has an amazing description of
 how we see reality: _we sit, with our backs to the future, watching the past

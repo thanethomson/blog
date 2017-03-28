@@ -10,8 +10,8 @@ tags:
 ---
 In thinking about the pros and cons of standardisation in the field of the
 Internet of Things, I stumbled upon a [project
-report](https://www.comsys.rwth-aachen.de/fileadmin/papers/2011/2011-kai-
-JITSR.pdf) where the authors claim that:
+report](https://www.comsys.rwth-aachen.de/fileadmin/papers/2011/2011-kai-JITSR.pdf)
+where the authors claim that:
 
 > The 'Internet of Things' (IoT) will represent a paradigm shift in
 communication: initially, communication occurred between living beings. With
@@ -19,15 +19,14 @@ ICT, this was complemented, and some degree replaced, by communication between
 humans and machines (e.g. through word processing), by communication between
 humans enabled by machines (e.g. telephones or e-mail), and by machines
 communicating with each other (e.g. in B2B e-business). The next step will see
-communication between 'things' … without any human intervention.
+communication between 'things' ... without any human intervention.
 
 This seems to be rather misguided thinking, and it's all too common in current
 thinking related to the Internet of Things, which seems to be informed by a
 paradigm that says that machines could one day look after our every need
 (allowing us to [relinquish the "burden" of
-choice](http://thanethomson.com/2012/09/03/on-wanting-to-relinquish-the-
-desire-to-choose/ "On wanting to relinquish the desire to choose" )). Let's go
-back to basics here for a moment: what exactly is the point of technology? For
+choice](/2012/09/03/on-wanting-to-relinquish-the-desire-to-choose/ "On wanting to relinquish the desire to choose" )).
+Let's go back to basics here for a moment: what exactly is the point of technology? For
 me, it seems as though technology is **something that we use** in order to
 improve our lives. The technologies we use generally depend on whether they
 improve our lives in some way. For example, I'll use my mobile phone to

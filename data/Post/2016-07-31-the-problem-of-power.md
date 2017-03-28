@@ -164,7 +164,7 @@ doesn't seem to be the norm in society. To quote
 > Truth always rests with the minority, and the minority is always stronger than
 the majority, because the minority is generally formed by those who really have
 an opinion, while the strength of a majority is illusory, formed by the gangs
-who have no opinion — and who, therefore, in the next instant (when it is
+who have no opinion - and who, therefore, in the next instant (when it is
 evident that the minority is the stronger) assume its opinion, which then
 becomes that of the majority, i.e., becomes nonsense by having the whole [mass]
 on its side, while Truth again reverts to a new minority.
