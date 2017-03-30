@@ -1,6 +1,12 @@
 project-name: thanethomson.com
 base-path: /
 encoding: utf-8
+markdown:
+  permalinks:
+    enabled: true
+    class: permalink
+    title: Permalink to this heading
+    text: "#"
 context:
   static:
     site-description: >
