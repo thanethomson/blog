@@ -14,6 +14,7 @@ tags:
   - decentralisation
   - peer-to-peer
   - philosophy
+show-toc: true
 ---
 
 It won't, however, be the

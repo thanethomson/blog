@@ -4,3 +4,4 @@ summary: Text
 date: DateTime
 tags: Tag[] -> posts
 content: Content
+show-toc: Boolean
