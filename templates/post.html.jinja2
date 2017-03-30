@@ -4,6 +4,9 @@
 
 {% block body %}
     {% include "partials/fullpost.html.jinja2" %}
+    {% if post.show_toc %}
+        {% include "partials/toc.html.jinja2" %}
+    {% endif %}
 {% endblock %}
 
 {% block comments %}

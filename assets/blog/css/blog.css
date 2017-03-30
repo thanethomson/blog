@@ -2,22 +2,6 @@
  * Styling for https://thanethomson.com/
  */
 @import url(fonts.css);
-/*$color-bg: #284c60;
-$color-text: #ccc;
-
-$color-code-bg: #555;
-//$color-blockquote-bg: #2d3439;
-$color-blockquote-bg: #282b2e;
-
-$color-menu-bg: #323131;
-$color-menu-border: #ccc;
-$color-menu-link: $color-text;
-$color-menu-link-hover: #56a6d2;
-
-$color-link: #56a6d2;
-$color-link-hover: #3e86ad;
-
-$color-post-small-title-link: $color-text;*/
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   background-color: #fff;
@@ -73,6 +57,9 @@ nav.primary {
         font-size: 1.3em; }
       nav.primary .menu ul li.social-icons {
         font-size: 1.8em; }
+
+nav.toc {
+  display: none; }
 
 footer {
   padding: 50px 0 50px 0;
@@ -155,6 +142,13 @@ div.body {
       text-decoration: none;
       border: 0; }
     div.body h1 a:hover, div.body h2 a:hover, div.body h3 a:hover, div.body h4 a:hover, div.body h5 a:hover, div.body h6 a:hover {
+      color: #4093bb; }
+    div.body h1 a.permalink, div.body h1 a.permalink:visited, div.body h1 a.permalink:active, div.body h2 a.permalink, div.body h2 a.permalink:visited, div.body h2 a.permalink:active, div.body h3 a.permalink, div.body h3 a.permalink:visited, div.body h3 a.permalink:active, div.body h4 a.permalink, div.body h4 a.permalink:visited, div.body h4 a.permalink:active, div.body h5 a.permalink, div.body h5 a.permalink:visited, div.body h5 a.permalink:active, div.body h6 a.permalink, div.body h6 a.permalink:visited, div.body h6 a.permalink:active {
+      vertical-align: top;
+      padding-left: 10px;
+      color: #ddd;
+      font-size: 80%; }
+    div.body h1 a.permalink:hover, div.body h2 a.permalink:hover, div.body h3 a.permalink:hover, div.body h4 a.permalink:hover, div.body h5 a.permalink:hover, div.body h6 a.permalink:hover {
       color: #4093bb; }
   div.body h4, div.body h5, div.body h6 {
     font-weight: bold; }
@@ -268,6 +262,53 @@ blockquote {
     div.body .about-avatar img:hover {
       filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
       -webkit-filter: grayscale(0%); } }
+/*
+ * Large desktop displays.
+ */
+@media (min-width: 1440px) {
+  nav.toc {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    padding: 160px 30px 100px 30px;
+    opacity: 0.6; }
+    nav.toc div.heading {
+      font-family: "RobotoSlab", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-left: 3px; }
+    nav.toc ul {
+      margin: 0;
+      padding: 0; }
+      nav.toc ul li {
+        list-style: none;
+        line-height: 90%;
+        padding: 0; }
+        nav.toc ul li a {
+          padding: 5px 7px 5px 1.5em;
+          margin: 0;
+          text-indent: -1em;
+          font-size: 15px;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -o-border-radius: 5px;
+          display: inline-block; }
+        nav.toc ul li a:hover {
+          border: 0;
+          color: #2c5d8b; }
+      nav.toc ul li.active a, nav.toc ul li.active a:hover {
+        background-color: #dae8f9; }
+      nav.toc ul li.l3 {
+        margin-left: 20px; }
+
+  nav.toc.hidden {
+    display: none; } }
 table {
   width: 100%; }
 

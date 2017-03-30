@@ -5,23 +5,6 @@
 @import "fonts.css";
 @import "mixins";
 
-/*$color-bg: #284c60;
-$color-text: #ccc;
-
-$color-code-bg: #555;
-//$color-blockquote-bg: #2d3439;
-$color-blockquote-bg: #282b2e;
-
-$color-menu-bg: #323131;
-$color-menu-border: #ccc;
-$color-menu-link: $color-text;
-$color-menu-link-hover: #56a6d2;
-
-$color-link: #56a6d2;
-$color-link-hover: #3e86ad;
-
-$color-post-small-title-link: $color-text;*/
-
 $color-bg: #fff;
 $color-text: #333;
 
@@ -39,10 +22,15 @@ $color-menu-border: $color-menu-link;
 
 $color-title-link: $color-text;
 $color-title-link-hover: $color-link-hover;
+$color-permalink: #ddd;
+$color-nav-menu-active-bg: #dae8f9;
+$color-nav-menu-link-hover: #2c5d8b;
 
 $color-post-small-title-link: $color-text;
 
 $width-menu-mobile: 300px;
+$width-post-desktop: 860px;
+$toc-width: 280px;
 
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -112,6 +100,10 @@ nav.primary {
       }
     }
   }
+}
+
+nav.toc {
+  display: none;
 }
 
 footer {
@@ -218,6 +210,16 @@ div.body {
     a:hover {
       color: $color-menu-link-hover;
     }
+
+    a.permalink, a.permalink:visited, a.permalink:active {
+      vertical-align: top;
+      padding-left: 10px;
+      color: $color-permalink;
+      font-size: 80%;
+    }
+    a.permalink:hover {
+      color: $color-menu-link-hover;
+    }
   }
   h4, h5, h6 {
     font-weight: bold;
@@ -309,7 +311,7 @@ blockquote {
  */
 @media(min-width: 960px) {
   .container {
-    width: 860px;
+    width: $width-post-desktop;
   }
   body {
     font-size: 2.0em;
@@ -371,6 +373,65 @@ blockquote {
         @include nograyscale;
       }
     }
+  }
+}
+
+/*
+ * Large desktop displays.
+ */
+@media(min-width: $width-post-desktop + ($toc-width * 2) + 20px) {
+  nav.toc {
+    display: inline-block;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; width: $toc-width;
+    padding: 160px 30px 100px 30px;
+    opacity: 0.6;
+
+    div.heading {
+      font-family: "RobotoSlab", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: -0.05em;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-left: 3px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        line-height: 90%;
+        padding: 0;
+
+        a {
+          padding: 5px 7px 5px 1.5em;
+          margin: 0;
+          text-indent: -1em;
+          font-size: 15px;
+          @include border-radius(5px);
+          display: inline-block;
+        }
+        a:hover {
+          border: 0;
+          color: $color-nav-menu-link-hover;
+        }
+      }
+
+      li.active {
+        a, a:hover {
+          background-color: $color-nav-menu-active-bg;
+        }
+      }
+
+      li.l3 {
+        margin-left: 20px;
+      }
+    }
+  }
+  nav.toc.hidden {
+    display: none;
   }
 }
 
