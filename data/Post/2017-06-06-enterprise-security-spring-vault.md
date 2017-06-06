@@ -551,8 +551,7 @@ on [GitHub](https://github.com/thanethomson/spring-vault-todo).
 ### 6.1. Bootstrap the Project
 I personally prefer [Gradle](https://gradle.org/) over
 [Maven](https://maven.apache.org/), largely because I think that
-XML is really ugly and illegible (the same reason why I prefer
-Java-based Spring configuration over XML-based configuration). See
+XML is really ugly and illegible. See
 the [example repository](https://github.com/thanethomson/spring-vault-todo)
 for my `build.gradle` and `settings.gradle` files. Make sure you
 have Gradle installed for your platform.
@@ -570,9 +569,10 @@ speed up the construction of our application:
   for integration with Vault.
 
 ### 6.2. Spring Configuration
-I personally prefer Spring's Java-based configuration over XML
-configuration any day. We need to configure several aspects of our
-application, each covered in the following sub-sections.
+As per my earlier comments regarding XML, I personally prefer Spring's
+Java-based configuration over XML configuration any day. We need to
+configure several aspects of our application, each covered in the
+following sub-sections.
 
 #### 6.2.1. Vault
 It all starts with Vault. Technically, we need Vault to be integrated
