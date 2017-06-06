@@ -580,7 +580,7 @@ even before we configure our database, because we'll be loading our
 database credentials from Vault. Here I'm following the Spring Vault
 documentation on using simple
 [token-based authentication](http://docs.spring.io/spring-vault/docs/1.0.1.RELEASE/reference/html/#vault.authentication.token)
-with Vault (SSL cert-based authentication is a topic for another blog
+with Vault (TLS cert-based authentication is a topic for another blog
 post).
 
 ```java
