@@ -50,7 +50,7 @@ have a simple table of contents (see to the right, if you're viewing
 this in a desktop browser).
 
 ## 1. Holistic Information Security
-This post, however, takes Spring Boot one step further in the context
+This post takes Spring Boot one step further in the context
 of enterprise information security towards thinking about the holistic
 approach to information security. I am by no means an information
 security professional, but given my experience in building large-scale
