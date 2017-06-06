@@ -385,7 +385,7 @@ blockquote {
     position: fixed;
     top: 0; right: 0; bottom: 0; width: $toc-width;
     padding: 160px 30px 100px 30px;
-    opacity: 0.6;
+    @include transition(padding 1s);
 
     div.heading {
       font-family: "RobotoSlab", Helvetica, Arial, sans-serif;

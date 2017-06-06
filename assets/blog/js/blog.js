@@ -49,6 +49,12 @@ function buildToc() {
 
             $(window).scroll(function() {
                 determineCurrentTocHeading();
+
+                if ($(window).scrollTop() > 200) {
+                    tocNav.css('padding-top', 50);
+                } else {
+                    tocNav.css('padding-top', 160);
+                }
             });
 
             determineCurrentTocHeading();

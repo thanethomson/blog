@@ -274,7 +274,10 @@ blockquote {
     bottom: 0;
     width: 280px;
     padding: 160px 30px 100px 30px;
-    opacity: 0.6; }
+    -webkit-transition: padding 1s;
+    -moz-transition: padding 1s;
+    -o-transition: padding 1s;
+    transition: padding 1s; }
     nav.toc div.heading {
       font-family: "RobotoSlab", Helvetica, Arial, sans-serif;
       font-weight: bold;
