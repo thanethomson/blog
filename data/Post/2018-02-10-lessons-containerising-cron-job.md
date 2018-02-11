@@ -28,7 +28,9 @@ Practically, I applied this to a recent data ingest project I was working on, an
 some pretty good results. In this post, I'll write a little about the project, the cron jobs
 and how I containerised them, as well as learnings I took from this process.
 
-_**TL;DR:** See the [Dockerfile](#the-dockerfile) and [the scripts](#the-scripts)._
+_**TL;DR:** For those just wanting to know how to Dockerise a cron job, see the
+[Dockerfile](#the-dockerfile) and [the scripts](#the-scripts). For those wanting a better
+approach to containerising cron jobs, see [this section](#a-better-approach-to-cron-jobs)._
 
 ## Background
 I recently built a prototype for a data ingest project that was made up
