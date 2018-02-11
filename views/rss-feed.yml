@@ -1,5 +1,5 @@
 path: /index.xml
-template: rss-feed.xml.jinja2
+template: rss-feed.jinja2
 context:
   dynamic:
     posts: session.query(Post).order_by(Post.date.desc()).all()
