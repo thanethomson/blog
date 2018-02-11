@@ -25,7 +25,7 @@ iteratively [clean](http://a.co/cwCLJ5U) it up. Each iteration seems to provide 
 business value to the solution, albeit with diminishing returns over time.
 
 Practically, I applied this to a recent data ingest project I was working on, and it had
-some pretty good results. In this post, I'll talk a little about the project, the cron jobs
+some pretty good results. In this post, I'll write a little about the project, the cron jobs
 and how I containerised them, as well as learnings I took from this process.
 
 _**TL;DR:** See the [Dockerfile](#the-dockerfile) and [the scripts](#the-scripts)._
