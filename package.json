@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thanethomson/blog",
+  "author": "Thane Thomson <connect@thanethomson.com>",
+  "license": "Creative Commons Attribution 4.0 International License",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "mathjax": "^2.7.3",
+    "skeleton-css": "^2.0.4"
+  }
+}

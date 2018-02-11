@@ -13,3 +13,6 @@ deploy-blog
 config.yml
 .sass-cache/
 /public-dev/
+yarn.lock
+.DS_Store
+.yarn-integrity
