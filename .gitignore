@@ -16,3 +16,4 @@ config.yml
 yarn.lock
 .DS_Store
 .yarn-integrity
+/venv/
