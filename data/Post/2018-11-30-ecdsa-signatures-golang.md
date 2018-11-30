@@ -38,9 +38,12 @@ Golang.
 
 Note that this article assumes a basic working knowledge of [public key
 cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography), as well as
-elliptic curve cryptography.[^1] Also, I'm a big fan of the Python programming
-language, so I'll be using Python extensively here for illustration purposes
-when constructing signatures, but then Go to validate them.
+elliptic curve cryptography. For a great intro to these fields, please see [this
+Cloudflare blog
+post](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/).
+Also, I'm a big fan of the Python programming language, so I'll be using Python
+extensively here for illustration purposes when constructing signatures, but
+then Go to validate them.
 
 ## The Problem
 Recently I've had to implement some blockchain-oriented code (built on top of
@@ -63,7 +66,7 @@ message (`msg`) is something like the following, where the structure of the
 What we want is a way of validating that the user with ID `msg.userId`
 actually did generate this message and the cryptographic signature in
 `msg.signature`. To do this, we define (in pseudocode) the function
-`validateSignature`[^2] which returns a boolean value:
+`validateSignature`, which returns a boolean value:
 
 ```javascript
 isValid = validateSignature(
@@ -462,16 +465,3 @@ And voilà! You've got yourself a tested ECDSA signature validation mechanism in
 Golang. Of course, the body validation here is very fragile, since changing a
 single character in the body of the message will necessarily affect its SHA256
 hash, and therefore its signature. But I'm sure you get the picture.
-
-#### Footnotes
-[^1]:
-    For a great basic intro to these fields, please see [this Cloudflare blog
-    post](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/).
-[^2]: One of the assumptions here is that my system can look up a
-    user's public key from a database somewhere, based on the user ID. Also, to
-    meet the
-    [determinism](https://tendermint.com/docs/spec/abci/abci.html#determinism)
-    requirements of Tendermint, the best way I can come up with right now to
-    handle message authentication is to include the claimed source user ID in
-    the message body itself. The assumption here is that updates to users'
-    public keys will also end up being stored on the blockchain.
