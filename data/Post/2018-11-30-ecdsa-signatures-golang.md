@@ -195,7 +195,7 @@ import struct
 
 # we have 2 levels of indentation because this is precisely how Golang would
 # extract it into the json.RawMessage field
-envelope = """{
+msg = """{
         "type": "issueTx",
         "userId": 1,
         "transaction": {
@@ -205,7 +205,7 @@ envelope = """{
 
 h = hashlib.sha256()
 # the .encode("utf-8") is to convert from a Python string to raw bytes
-h.update(envelope.encode("utf-8"))
+h.update(msg.encode("utf-8"))
 
 # print out the hexadecimal version of the digest
 print(h.hexdigest())
