@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/thanethomson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thanethomson.com
+  * I am thanethomson (https://keybase.io/thanethomson) on keybase.
+  * I have a public key ASDod3Xyn8e0vFSDDI36TX4FQlKiGQqItrmSn-3uIHikYQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101eab418677b092fa110978ce5232d836a5b7e058636d2d95f5a032b957433bc570a",
+      "host": "keybase.io",
+      "kid": "0120e87775f29fc7b4bc54830c8dfa4d7e054252a2190a88b6b9929fedee2078a4610a",
+      "uid": "27d3434d0ca6f3e51486a2555a1c4b19",
+      "username": "thanethomson"
+    },
+    "merkle_root": {
+      "ctime": 1578409304,
+      "hash": "373400873215d8b0f74726a81d1e9a8973a46707d54d5a05ec168edb9d39223bdb9e9e8a404743c931ee0253cb4572b3a5685c3881ff85f7fb1560efee498691",
+      "hash_meta": "cf52bc647887597873c5552d0b8fe470fd6015894d672973a9932c957ebdbcca",
+      "seqno": 14122699
+    },
+    "service": {
+      "entropy": "4WcbEAaKMkJW4K01Et9ft4kX",
+      "hostname": "thanethomson.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1578409324,
+  "expire_in": 504576000,
+  "prev": "1058fa32db546ef4e61eb26474629b6a7219a196aa534ce930593e1728a81eec",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg6Hd18p/HtLxUgwyN+k1+BUJSohkKiLa5kp/t7iB4pGEKp3BheWxvYWTESpcCCMQgEFj6MttUbvTmHrJkdGKbanIZoZaqU0zpMFk+FyioHuzEIAMl5rBjIuHE3hAgsD52eW/I0vEKw8nNVpXlPnpIgdaQAgHCo3NpZ8RAE1032+otRK0GKN2eDUQ/XzaJJPa4le//RMuyaa7YXIEjCZYYXI/1xVuyC61sCqCwRwxWlgIG2PPN5TGTB4bpCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPyczoSCwdY8D3bsnN4F3k/t3IgZINQ2ko9T3Vc+x488o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thanethomson
+
+==================================================================
